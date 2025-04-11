@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GTA - Exposição de Itens</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #ff4d00;
+    }
+
+    .item-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .item-card {
+      background-color: #2c2c2c;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.2s;
+    }
+
+    .item-card:hover {
+      transform: scale(1.05);
+    }
+
+    .item-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .item-info {
+      padding: 15px;
+    }
+
+    .item-title {
+      font-size: 1.2em;
+      color: #ffa500;
+      margin-bottom: 10px;
+    }
+
+    .item-description {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    GTA - Exposição de Itens
+  </header>
+
+  <div class="item-container">
+    <div class="item-card">
+      <img src="https://via.placeholder.com/250x150.png?text=Arma+AK-47" alt="AK-47">
+      <div class="item-info">
+        <div class="item-title">AK-47</div>
+        <div class="item-description">Fuzil automático clássico, ideal para combates intensos.</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/250x150.png?text=Carro+Esportivo" alt="Carro Esportivo">
+      <div class="item-info">
+        <div class="item-title">Carro Esportivo</div>
+        <div class="item-description">Alta velocidade e estilo. Perfeito para fugas cinematográficas.</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/250x150.png?text=Colete+à+Prova+de+Balas" alt="Colete">
+      <div class="item-info">
+        <div class="item-title">Colete à Prova de Balas</div>
+        <div class="item-description">Aumenta sua resistência em confrontos armados.</div>
+      </div>
+    </div>
+
+    <!-- Adicione mais itens conforme desejar -->
+  </div>
+</body>
+</html>
