@@ -1,101 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GTA - Exposição de Itens</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T7NICKS - Loja GTA</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #1e1e1e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
       color: #fff;
     }
 
-    header {
-      background-color: #111;
-      padding: 20px;
+    .top-title {
+      background-color: #000;
       text-align: center;
-      font-size: 2em;
+      padding: 25px 10px 10px;
+      font-size: 2.5em;
+      color: #ff4d00;
       font-weight: bold;
       letter-spacing: 2px;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.3em;
+      font-weight: bold;
       color: #ff4d00;
     }
 
-    .item-container {
+    nav a {
+      margin: 0 15px;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .container {
+      padding: 40px 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
-      gap: 20px;
+      gap: 30px;
     }
 
-    .item-card {
-      background-color: #2c2c2c;
-      border-radius: 12px;
-      overflow: hidden;
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
       width: 250px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
       transition: transform 0.2s;
     }
 
-    .item-card:hover {
+    .card:hover {
       transform: scale(1.05);
     }
 
-    .item-card img {
+    .card img {
       width: 100%;
       height: 150px;
       object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
     }
 
-    .item-info {
+    .card-content {
       padding: 15px;
     }
 
-    .item-title {
+    .card-title {
       font-size: 1.2em;
       color: #ffa500;
       margin-bottom: 10px;
     }
 
-    .item-description {
+    .card-price {
+      font-size: 1em;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .card-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card-buttons a {
+      background-color: #ff4d00;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 5px;
+      text-decoration: none;
       font-size: 0.9em;
-      color: #ccc;
+    }
+
+    .card-buttons a:hover {
+      background-color: #e03e00;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        text-align: center;
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
 <body>
+
+  <div class="top-title">T7NICKS</div>
+
   <header>
-    GTA - Exposição de Itens
+    <div class="logo">GTA - Loja de Veículos</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Catálogo</a>
+      <a href="#">VIP</a>
+      <a href="#">Contato</a>
+    </nav>
   </header>
 
-  <div class="item-container">
-    <div class="item-card">
-      <a href="arma.jpeg" target="_blank">
-        <img src="https://via.placeholder.com/250x150.png?text=Arma+AK-47" alt="AK-47">
-      </a>
-      <div class="item-info">
-        <div class="item-title">AK-47</div>
-        <div class="item-description">Fuzil automático clássico, ideal para combates intensos.</div>
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150.png?text=Fox+Rebaixado" alt="Fox Rebaixado" />
+      <div class="card-content">
+        <div class="card-title">Fox Rebaixado</div>
+        <div class="card-price">R$ 40,00</div>
+        <div class="card-buttons">
+          <a href="#">Ver mais</a>
+          <a href="#">Comprar</a>
+        </div>
       </div>
     </div>
 
-    <div class="item-card">
-      <img src="https://via.placeholder.com/250x150.png?text=Carro+Esportivo" alt="Carro Esportivo">
-      <div class="item-info">
-        <div class="item-title">Carro Esportivo</div>
-        <div class="item-description">Alta velocidade e estilo. Perfeito para fugas cinematográficas.</div>
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150.png?text=Brasilia+Rebaixada" alt="Brasilia Rebaixada" />
+      <div class="card-content">
+        <div class="card-title">Brasilia Rebaixada</div>
+        <div class="card-price">R$ 50,00</div>
+        <div class="card-buttons">
+          <a href="#">Ver mais</a>
+          <a href="#">Comprar</a>
+        </div>
       </div>
     </div>
 
-    <div class="item-card">
-      <img src="https://via.placeholder.com/250x150.png?text=Colete+à+Prova+de+Balas" alt="Colete">
-      <div class="item-info">
-        <div class="item-title">Colete à Prova de Balas</div>
-        <div class="item-description">Aumenta sua resistência em confrontos armados.</div>
-      </div>
-    </div>
+    <!-- Adicione mais cards aqui -->
   </div>
+
 </body>
 </html>
